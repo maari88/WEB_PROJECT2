@@ -1,19 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zatochka</title>
+    <style>
+        * {
+            box-sizing: border-box; 
+        }
+
+        h1,h2,h3 {
+          text-align: center;
+          font-family: 'Lexend Peta', sans-serif;
+          color:rgb(186, 207, 28);
+          font-size: 40px;
+          text-shadow:  3px 3px 0 rgb(87, 98, 17), 
+           -3px -3px 0 rgb(87, 98, 17),
+           3px -3px 0 rgb(87, 98, 17),
+           -3px 3px 0 rgb(87, 98, 17),
+           0 3px 0 rgb(87, 98, 17), 
+           0 -3px 0 rgb(87, 98, 17),
+           1px 1px 0 rgb(87, 98, 17),   
+          -1px -1px 0 rgb(87, 98, 17),
+           1px -1px 0 rgb(87, 98, 17),
+          -1px 1px 0 rgb(87, 98, 17);
+        }
+        p {
+          text-align: center;
+          font-family: 'Lexend Peta', sans-serif;
+          font-size: 1.3rem;
+          color:rgb(26, 29, 3);
+          font-weight: 1000;
+        }
+
+        ul,ol,h4 {
+            text-align: center;
+          font-family: 'Lexend Peta', sans-serif;
+          font-size: 1rem;
+          color:rgb(26, 29, 3);
+          font-weight: 1000;
+          list-style-position: inside;
+        }
+        
+        
+        .styled-table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 2px solid rgb(87, 98, 17);
+            background-color: white;
+        }
+        .styled-table th, .styled-table td {
+            border: 2px solid rgb(87, 98, 17);
+            padding: 10px;
+        }
+        #footer {
+        background-color: whitesmoke;
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(26, 29, 3);
+        padding: 20px;
+        position: relative; /* Для позиціонування контенту відносно футера */
+        }
+
+        #footer > h6 {
+        text-align: right; 
+        margin: 0;
+        }
+
+        #footer > p {
+        text-align: left; 
+        margin: 0;
+        position: absolute; /* абсолютне позиціонування для розміщення зверху зліва */
+        top: 20px; 
+        left: 20px; 
+        font-size: 14px;
+        color: rgb(26, 29, 3);
+       }
+
+       #header {
+        background-color: rgb(226, 255, 97);
+       }
+
+       body {
+        background-image: url(leather-pieces-and-leather-cutting-tools.jpg);
+        background-size: contain;
+        background-position: center;
+       }
+
+       .centered-box {
+        background-color: rgba(255, 255, 255, 0.649);
+        padding: 20px;
+        border-radius: 20px;
+        width: 80%; 
+        max-width: 1200px; 
+        margin: 0 auto; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+       }
+    </style>
 </head>
 <body>
-    <header>
-
+    <header id = "header">
+      
     </header>
     <main>
+        <div class="centered-box">
     <h1> Заточна майстерня DOMOS</h1>
-    <h2> Заточка будь-якого інструменту в Києві</h2>
-
-    <a href="file:///C:/Users/user/Desktop/%D0%9F%D0%A0%D0%9E%D0%93/reports/index.html">Опис предметної галузі</a>
+    <h2 style = " font-size: 20px; "> Заточка будь-якого інструменту в Києві</h2>
 
     <p>Заточка інструментів:</p>
     <ul>
@@ -32,9 +127,9 @@
         <li>В цеху(2-3 дні)</li>
     </ol>
 
-    <h3>Ціни</h3>
+    <h3 >Ціни</h3>
     <p>Манікюрний:</p>
-    <table border: 1px solid black;>
+    <table class="styled-table">
         <tr>
             <th>Інструмент</th>
             <th>Ціна(грн)</th>
@@ -58,7 +153,7 @@
     </table>
 
     <p>Парихмахерський:</p>
-    <table>
+    <table class="styled-table">
         <tr>
             <th>Інструмент</th>
             <th>Ціна(грн)</th>
@@ -74,7 +169,7 @@
     </table>
 
     <p>Садовий/деревообробний:</p>
-    <table>
+    <table class="styled-table">
         <tr>
             <th>Інструмент</th>
             <th>Ціна(грн)</th>
@@ -101,7 +196,7 @@
         </tr> 
     </table>
     <p>Кухонний:</p>
-    <table>
+    <table class="styled-table">
         <tr>
             <th>Інструмент</th>
             <th>Ціна(грн)</th>
@@ -119,10 +214,24 @@
             <th>30-70</th>
         </tr>
     </table>
-    <img src="https://zatoch.kiev.ua/wp-content/uploads/2017/05/P1010157.jpg" alt="Заточка" width="400" height="300">
+    <h3 >Результати</h3>
+    <img src="https://zatoch.kiev.ua/wp-content/uploads/2017/05/P1010157.jpg" alt="Заточка" width="400" height="300" style="display: block; margin: 0 auto;">
+    <h3 >Контактна інформація</h3>
+    <p>Години роботи:</p>
+    <h4> Понеділок-П'ятниця - 9:00 - 17:00</h4>
+    <h4> Субота-Неділя - 9:00 - 13:00 </h4>
+    <p>Номера телефону:</p>
+    <ul>
+        <li>+380 66 123 60 91</li>
+        <li>+380 66 123 60 91</li>
+    </ul>
+    <p>Місцезнаходження:</p>
+    </div>
 </main>
-<footer>
-    
+<footer id="footer">
+    <h6>+380 66 123 60 91</h6>
+    <h6>+380 55 348 33 21</h6>
+    <p>Райдужна 25</p>
 </footer>
 </body>
 </html>
